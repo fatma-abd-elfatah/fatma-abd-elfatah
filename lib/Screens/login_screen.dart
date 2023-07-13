@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
-  LoginScreen({super.key});
+  const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
         body: Stack(
@@ -53,7 +52,7 @@ class LoginScreen extends StatelessWidget {
                   // Username text field
                   TextField(
                     decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.person),
+                      prefixIcon: const Icon(Icons.person),
                       hintText: "Username",
                       filled: true,
                       fillColor: Colors.white,
@@ -63,15 +62,15 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
 
-                  SizedBox(
+                  const SizedBox(
                     height: 18,
                   ),
 
                   // Password text field
                   TextField(
                     decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.lock),
-                      suffixIcon: Icon(Icons.visibility_off),
+                      prefixIcon: const Icon(Icons.lock),
+                      suffixIcon: const Icon(Icons.visibility_off),
                       hintText: "Password",
                       filled: true,
                       fillColor: Colors.white,

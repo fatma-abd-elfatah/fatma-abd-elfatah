@@ -26,7 +26,7 @@ class OpeningScreen extends StatelessWidget {
 
               Text("Quiz App",
                   style: GoogleFonts.pacifico(
-                    color: Color.fromARGB(255, 31, 18, 12),
+                    color: const Color.fromARGB(255, 31, 18, 12),
                     fontSize: 30,
                   )),
               const SizedBox(
@@ -34,22 +34,24 @@ class OpeningScreen extends StatelessWidget {
               ),
               Text("Welcome to our App",
                   style: GoogleFonts.dancingScript(
-                    color: Color.fromARGB(255, 31, 18, 12),
+                    color: const Color.fromARGB(255, 31, 18, 12),
                     fontSize: 40,
                   )),
 
-              SizedBox(
+              const SizedBox(
                 height: 70,
               ),
               //Spacer(),
               Container(
                 width: double.infinity,
-                margin: EdgeInsets.symmetric(vertical: 28, horizontal: 26),
+                margin:
+                    const EdgeInsets.symmetric(vertical: 28, horizontal: 26),
                 child: ElevatedButton(
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => LoginScreen()),
+                        MaterialPageRoute(
+                            builder: (context) => const LoginScreen()),
                       );
                     },
                     child: const Text(

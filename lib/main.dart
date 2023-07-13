@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'Screens/opening_screen.dart';
+//import 'Screens/opening_screen.dart';
+import 'Screens/categorization_screen.dart';
 
 void main() {
   runApp(
@@ -13,11 +14,10 @@ class OurQuizzApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        primarySwatch: Colors.orange,
-      ),
+      theme: ThemeData(primarySwatch: Colors.deepOrange),
       debugShowCheckedModeBanner: false,
-      home: OpeningScreen(),
+      // home: OpeningScreen(),
+      home: CategorizationScreen(),
     );
   }
 }
